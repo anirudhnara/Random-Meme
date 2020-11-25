@@ -1,0 +1,115 @@
+.thing {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold
+}
+
+.meme {
+    text-align: center;
+    padding: 20px
+}
+
+#meme {
+    border: 5px solid #ffffff;
+    max-width: 60%;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: blue
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
+#thing {
+    color: white;
+}
+
+#thing:hover {
+    color: yellow 
+}
+
+.all {
+    background: #222222;
+    border-radius: 25px;
+    max-width: 30%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%; 
+    top: 50%;
+}
+
+body {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(83,252,70,1) 100%);
+}
+
+.reload-page {
+    text-align: center;
+}
+
+.page-reload {
+    padding: 30px;
+    font-size: 125%;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    background: #222222;
+    color: white;
+    transition: all 200ms ease-out;
+    border: 2px solid #222222;
+}
+
+.page-reload:hover {
+    padding: 30px;
+    font-size: 125%;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    color: white;
+    border: 5px solid #222222;
+    background: rgb(131,58,180);
+    transition: all 200ms ease-out;
+    background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.page-reload:active {
+    padding: 30px;
+    font-size: 125%;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    transition: all 200ms ease-out;
+    border: 5px solid #222222;
+}
+
+.post-info {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    font-weight: bold;
+    background: #222222;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 25px
+}
