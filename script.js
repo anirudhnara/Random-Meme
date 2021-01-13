@@ -1,7 +1,6 @@
-
 // Meme function that basically powers the site
 function meme () {
-    let fetchRes = fetch("https://www.reddit.com/r/Cleanmemes/hot.json"); 
+    let fetchRes = fetch("https://www.reddit.com/r/memes/hot.json"); 
     fetchRes.then(res => res.json()).then(d => {
         // Generates a random number for the random meme
         var randomNumber = Math.floor(Math.random() * 26)
@@ -14,14 +13,17 @@ function meme () {
         var upvotes = d.data.children[randomNumber].data.ups
         var awards = d.data.children[randomNumber].data.total_awards_received
         var comments = d.data.children[randomNumber].data.num_comments
+        var author = d.data.children[randomNumber].data.author
         
         // setting the text to the data
         document.getElementById('meme').src = memeImg;
         document.getElementById('thing').innerHTML = memeTitle;
         document.getElementById('thing').href = postURL;
-        document.getElementById('upvotes').innerHTML = `👍 ${upvotes} upvotes`;
-        document.getElementById('comments').innerHTML = `💬 ${comments} comments`;
-        document.getElementById('awards').innerHTML = `🏆 ${awards} awards`;
+        document.getElementById('upvotes').innerHTML = `👍 Upvotes: ${upvotes}`;
+        document.getElementById('comments').innerHTML = `💬 Comments: ${comments}`;
+        document.getElementById('awards').innerHTML = `🏆 Awards: ${awards}`;
+        document.getElementById('author').href = `https://reddit.com/user/${author}`;
+        document.getElementById('author').innerHTML = `📕 Author: ${author}`;
     })
 }
 

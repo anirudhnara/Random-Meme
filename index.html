@@ -8,33 +8,35 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Random Meme</title>
-    <link rel="shortcut icon" type="image" href="https://img00.deviantart.net/b8ae/i/2017/284/c/8/emoji_laugh_by_andrea_pixel-dbq8l60.png"/>
+    <link rel="shortcut icon" type="image" href="images/laughing_emoji.png"/>
     <meta name="theme-color" content="#54FF1E">
     <meta content="Random Reddit Meme" property="og:title">
     <meta name="og:site_name" content="">
     <meta name="twitter:title" content="Random Reddit Meme">
     <meta name="twitter:description" content="Website that generates random meme from r/memes">
-    <meta name="twitter:image" content="https://i.redd.it/rq36kl1xjxr01.png">
-    <meta name="og:image" content="https://i.redd.it/rq36kl1xjxr01.png">
+    <meta name="twitter:image" content="images/reddit.png">
+    <meta name="og:image" content="images/reddit.png">
     <meta content="Website that generates random meme from Reddit" property="og:description">
 </head> 
 
 <body>
     <div class="all">
         <div class="thing">
-            <a href="https://test.mythify.repl.co" id="thing" target="_blank">Loading meme...</a>
+            <a href="/" id="thing" target="_blank">Loading meme...</a>
         </div>
         <div class="meme">
-            <img src="https://retchhh.files.wordpress.com/2015/03/loading6.gif" id="meme" alt="meme didnt load :(">
+            <img src="images/loading.gif" id="meme" alt="meme didnt load :(">
         </div>
     </div>
     <div class="reload-page">
         <button onclick="reloadPage()" class="page-reload">Reload Page</button>
     </div>
     <div class="post-info">
+        <h3>Post Info</h3>
         <p id="upvotes">👍 Loading Upvotes...</p>
         <p id="comments">💬 Loading Comments...</p>
         <p id="awards">🏆 Loading Awards...</p>
+        <a href="/" target="_blank" id="author">📕 Loading Author...</p>
     </div>
 </body> 
 

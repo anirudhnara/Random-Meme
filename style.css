@@ -113,3 +113,10 @@ body {
     padding: 20px;
     border-radius: 25px
 }
+
+#author {
+    color: white
+}
+#author:hover {
+    color: yellow
+}
